@@ -2,23 +2,15 @@
 
 <?php
 
+use CraftCli\InstallCommand;
+use CraftCli\UpdateCommand;
 use Symfony\Component\Console\Application;
-use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Input\InputArgument;
 
 require 'vendor/autoload.php';
 
 $app = new Application('Craft', '1.0');
 
-$app->register('install')
-	->setDescription('Download a fresh Craft installation.')
-	->addArgument('directory', InputArgument::REQUIRED, 'Target installation directory.')
-	->setCode(function(InputInterface $input, OutputInterface $output)
-	{
-
-		$output->writeln('<comment>Install Craft!</comment>');
-
-	});
+$app->add(new InstallCommand());
+$app->add(new UpdateCommand());
 
 $app->run();
