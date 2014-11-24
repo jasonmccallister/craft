@@ -1,0 +1,18 @@
+{
+	"name": "themccallister/craft-cli",
+	"description": "Install and manage Craft CMS from the command line!",
+	"authors": [
+		{
+			"name": "Jason McCallister",
+			"email": "themccallister@gmail.com"
+		}
+	],
+	"require": {
+		"symfony/console": "~2.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"CraftCli\\": "src"
+		}
+	}
+}
