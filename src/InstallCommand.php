@@ -35,18 +35,18 @@ class InstallCommand extends Command {
 			$output->writeln('... lets install Craft!!!');
 			$output->writeln('... downloading the latest version of Craft ...');
 
-			$process = new Process("curl -L -O $craftUrl");
+			$process = new Process("curl -L -o craft.zip $craftUrl");
 
 			$process->run(function ($type, $buffer)
 			{
 				if (Process::ERR === $type)
 				{
-					echo 'ERR > '.$buffer;
+					$output->writeln($buffer);
 				}
 
 				else
 				{
-					echo 'OUT > '.$buffer;
+					$output->writeln($buffer);
 				}
 			});
 
