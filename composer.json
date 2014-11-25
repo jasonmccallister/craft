@@ -1,6 +1,6 @@
 {
 	"name": "themccallister/craft-cli",
-	"description": "Install and manage Craft CMS from the command line!",
+	"description": "Install and manage Craft CMS from the command line",
 	"authors": [
 		{
 			"name": "Jason McCallister",
