@@ -32,22 +32,23 @@ class InstallCommand extends Command {
 
 			$craftUrl = "http://buildwithcraft.com/latest.zip?accept_license=yes";
 
-			$output->writeln('... lets install Craft!!!');
-			$output->writeln('... downloading the latest version of Craft ...');
-
 			$process = new Process("curl -L -o craft.zip $craftUrl");
 
-			$process->run(function ($type, $buffer)
+			$process->start();
+
+			$process->wait(function ($type, $buffer)
 			{
+
 				if (Process::ERR === $type)
 				{
-					$output->writeln($buffer);
+					echo $buffer;
 				}
 
 				else
 				{
 					$output->writeln($buffer);
 				}
+
 			});
 
 			// executes after the command finishes
