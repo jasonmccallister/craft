@@ -59,6 +59,10 @@ class InstallCommand extends Command {
 
 			$output->writeln($process->getOutput());
 
+			// TODO unzip the craft.zip
+
+			// TODO move to the installation directory
+
 		}
 	}
 
