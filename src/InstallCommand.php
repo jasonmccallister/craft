@@ -30,18 +30,20 @@ class InstallCommand extends Command {
 	{
 		$helper = $this->getHelper('question');
 
-		$question = new ChoiceQuestion('Do you agree with the Craft terms and conditions [NO]?', array(
-			'Yes','No'), 1);
+		$question = new ChoiceQuestion('Do you agree with the terms and conditions for Craft (n)?', array(
+			'y' => 'yes','n' => 'no'), n);
 
-		$question->setErrorMessage("<error>You must agree to the terms and conditions.</error>");
+		$question->setErrorMessage('<error>You must agree to the terms and conditions.</error>');
 
 		$answer = $helper->ask($input, $output, $question);
 
 		$directory = getcwd() . '/' . $input->getArgument('directory');
 
-		if ($answer == 1)
+		if ($answer == no)
 		{
-			$output->writeln('<error>You must agree to the license to continue...');
+			$output->writeln('<error>You must agree with the terms and conditions to continue!</error>');
+
+			$output->writeln('<info>Craft License is located here: http://buildwithcraft.com/license</info>');
 
 			exit(1);
 		}
