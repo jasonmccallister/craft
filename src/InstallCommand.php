@@ -48,7 +48,7 @@ class InstallCommand extends Command {
 
 		$this->doesDirectoryExist($directory, $output);
 
-		$this->download($zip = $this->createZip(), $output);
+		$this->download($output, $zip = $this->createZip());
 
 		$this->unzip($zip, $directory);
 
@@ -73,7 +73,7 @@ class InstallCommand extends Command {
 	}
 
 
-	protected function download($zip, $output)
+	protected function download($output, $zip)
 	{
 		$output->writeln("<info>Downloading Craft, please grab a coffee or tea while you wait...</info>");
 

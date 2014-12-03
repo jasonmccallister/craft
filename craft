@@ -5,6 +5,7 @@ use CraftCli\InstallCommand;
 use Symfony\Component\Console\Application;
 
 require __DIR__.'/../../autoload.php';
+// require 'vendor/autoload.php';
 
 $app = new Application('Craft CLI', '1.3');
 
