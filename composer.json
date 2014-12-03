@@ -15,7 +15,7 @@
 		"symfony/console": "2.6.*"
 	},
 	"bin": [
-		"themccallister"
+		"craft"
 	],
 	"autoload": {
 		"psr-4": {
