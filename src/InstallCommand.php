@@ -77,9 +77,9 @@ class InstallCommand extends Command {
 	{
 		$response = $this->client->get('http://buildwithcraft.com/latest.zip?accept_license=yes')->getBody();
 
-		file_put_contents($zip, $response);
-
 		$output->writeln("<info>Downloading Craft, please grab a coffee or tea while you wait...</info>");
+		
+		file_put_contents($zip, $response);
 
 		return $this;
 	}
