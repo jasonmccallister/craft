@@ -1,15 +1,13 @@
 #! /usr/bin/env php
-
 <?php
 
 use CraftCli\InstallCommand;
-use CraftCli\UpdateCommand;
 use Symfony\Component\Console\Application;
 
 require 'vendor/autoload.php';
 
 $app = new Application('Craft CLI', '1.0');
 
-$app->add(new InstallCommand());
+$app->add(new InstallCommand(new GuzzleHttp\Client));
 
 $app->run();
