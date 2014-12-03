@@ -1,8 +1,8 @@
 {
-	"name": "themccallister/craft-cli",
+	"name": "themccallister/craft",
 	"description": "Install Craft CMS from the command line.",
 	"keywords": ["craft","craftcms"],
-	"homepage": "http://github.com/themccallister/craft-cli",
+	"homepage": "http://github.com/themccallister/craft",
 	"license": "MIT",
 	"authors": [
 		{
