@@ -6,7 +6,7 @@ use Symfony\Component\Console\Application;
 
 require __DIR__.'/../../autoload.php';
 
-$app = new Application('Craft CLI', '1.0');
+$app = new Application('Craft CLI', '1.3');
 
 $app->add(new InstallCommand(new GuzzleHttp\Client));
 
