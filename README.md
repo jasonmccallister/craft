@@ -14,6 +14,8 @@ Manage Craft from the command line with composer. This tool is heavily inspired 
 
 	`export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/username/.composer/vendor/bin"`
 
+	**Note**: make sure you change `username` above
+
 2. Require `craft` globally by using this command:
 
 	`composer global require "themccallister/craft=dev-master"`
