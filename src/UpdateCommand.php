@@ -36,11 +36,31 @@ class UpdateCommand extends Command {
 	}
 
 	/**
+	 * Execute the command.
+	 *
 	 * @param InputInterface $input
 	 * @param OutputInterface $output
+	 * @return void
 	 */
 	public function execute(InputInterface $input, OutputInterface $output)
 	{
+		// ask for the craft installation path
 
+		// load the app path - fail if unable too.
+
+		// trigger a backup in craft
+
+		// check for the backup
+
+		// set a temporary path using md5 on the current time?
+
+		// copy the db.php configuration to temporary path?
+
+		// copy the general.php configuration to temporary path?
+	}
+
+	public function loadCraft($path)
+	{
+	    // attempt load the craft application
 	}
 }
