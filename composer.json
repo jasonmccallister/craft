@@ -1,25 +1,25 @@
 {
-	"name": "themccallister/craft",
-	"description": "Install Craft CMS from the command line.",
-	"keywords": ["craft","craftcms"],
-	"homepage": "http://github.com/themccallister/craft",
-	"license": "MIT",
-	"authors": [
-		{
-			"name": "Jason McCallister",
-			"email": "themccallister@gmail.com"
-		}
-	],
-	"require": {
-		"guzzlehttp/guzzle": "4.2.*",
-		"symfony/console": "~2.6.*"
-	},
-	"bin": [
-		"craft"
-	],
-	"autoload": {
-		"psr-4": {
-			"CraftCli\\": "src"
-		}
-	}
+    "name": "themccallister/craft",
+    "description": "Install Craft CMS from the command line.",
+    "keywords": ["craft","craftcms"],
+    "homepage": "http://github.com/themccallister/craft",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jason McCallister",
+            "email": "themccallister@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "4.2.*",
+        "symfony/console": "2.6.*"
+    },
+    "bin": [
+        "craft"
+    ],
+    "autoload": {
+        "psr-4": {
+            "CraftCli\\": "src"
+        }
+    }
 }
