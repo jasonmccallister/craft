@@ -10,6 +10,8 @@ Manage Craft from the command line with composer. This tool is heavily inspired 
 
 1. Ensure that the `~/.composer/vendor/bin` is available in your terminal PATH.
 
+	To add the path for the current terminal session you can use `export PATH=$PATH:$HOME/.config/composer/vendor/bin`. Some versions of composer need a different path, for them the command would be `export PATH=$PATH:$HOME/.config/composer/vendor/bin`
+
 	**Note**: my [Oh My ZSH](http://ohmyz.sh) profile has this line:
 
 	`export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/username/.composer/vendor/bin"`
